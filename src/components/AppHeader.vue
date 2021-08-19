@@ -5,7 +5,7 @@
       <img alt="Vue logo" class="max-w-none w-12" src="../assets/logo.png" />
     </router-link>
     <div class="text-center">
-      <router-link class="mx-3" v-for="link in links" :key="link.to" :to="link.to">{{ link.title }}</router-link>
+      <router-link class="mx-3 flex flex-wrap" v-for="link in links" :key="link.to" :to="link.to">{{ link.title }}</router-link>
     </div>
     <!-- <button class="bg-white px-4 py-2 rounded-xl text-blue-500">Sign In || Wait List</button> -->
   </div>

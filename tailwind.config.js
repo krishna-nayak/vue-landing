@@ -2,6 +2,7 @@ const plugin = require("tailwindcss/plugin");
 module.exports = {
   purge: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   darkMode: false,
+  // mode: "jit",
   theme: {
     extend: {
       screens: {
@@ -25,6 +26,7 @@ module.exports = {
   variants: {
     extend: {
       width: ["responsive"],
+      gradientColorStops: ["active", "group-hover", "hover"],
     },
   },
   plugins: [
