@@ -11,7 +11,7 @@
       :class="{ hidden: !navToggle }"
       class="px-4 py-2 sm:block rounded-md border-2 border-blue-400 text-blue-500 bg-gradient-to-r hover:from-blue-500 hover:to-blue-400 hover:text-white"
     >
-      Sign In || Wait List
+      Sign In
     </button>
     <button @click="navMenu" class="sm:hidden">
       <i class="fas fa-bars fa-2x"></i>
