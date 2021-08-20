@@ -7,24 +7,46 @@ module.exports = {
     extend: {
       screens: {
         sm: "640px",
-        // => @media (min-width: 640px) { ... }
-
         md: "768px",
-        // => @media (min-width: 768px) { ... }
-
         lg: "1024px",
-        // => @media (min-width: 1024px) { ... }
-
         xl: "1280px",
-        // => @media (min-width: 1280px) { ... }
-
         "2xl": "1536px",
-        // => @media (min-width: 1536px) { ... }
+      },
+
+      width: {
+        100: "25rem",
+        104: "26rem",
+        116: "29rem",
+        md: "37rem",
+        lg: "64rem",
+      },
+      zIndex: {
+        "-1": "-1",
+      },
+      animation: {
+        "circle-expand": "circle-expand 8s linear 0.3s infinite",
+      },
+      keyframes: {
+        "circle-expand": {
+          "0%": {
+            transform: "translate(-40%, 40%) scale(0.8)",
+          },
+          "33%": {
+            transform: "translate(-50%, 60%) scale(1)",
+          },
+          "66%": {
+            transform: "translate(-60%, 40%) scale(0.9)",
+          },
+          "100%": {
+            transform: "translate(-40%, 40%) scale(0.8)",
+          },
+        },
       },
     },
   },
   variants: {
     extend: {
+      animation: ["hover", "focus"],
       width: ["responsive"],
       gradientColorStops: ["active", "group-hover", "hover"],
     },
@@ -35,23 +57,27 @@ module.exports = {
         ".screen": {
           minHeight: "calc(100vh - 5rem)",
         },
+        ".h-screen-vw-50": {
+          height: "50vw",
+        },
       };
       const width = {
-        ".w-100": {
-          width: "25rem",
-        },
-        ".w-104": {
-          width: "26rem",
-        },
-        ".w-116": {
-          width: "29rem",
-        },
         ".w-30-ch": {
           width: "30ch",
+        },
+        ".w-screen-vw-50": {
+          width: "50vw",
+        },
+      };
+
+      const borders = {
+        ".border-b-1": {
+          borderBottomWidth: "0.0625rem",
         },
       };
       addComponents(screen);
       addComponents(width);
+      addComponents(borders);
     }),
   ],
 };
