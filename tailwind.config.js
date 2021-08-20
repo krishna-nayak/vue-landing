@@ -23,10 +23,29 @@ module.exports = {
       zIndex: {
         "-1": "-1",
       },
+      translate: {
+        out: "1000px",
+      },
       animation: {
         "circle-expand": "circle-expand 8s linear 0.3s infinite",
+        "card-enter": "card-enter 1.8s ease forwards",
+        "card-motion": "card-motion 2s ease-in-out 1.9s infinite alternate",
       },
       keyframes: {
+        "card-enter": {
+          to: {
+            transform: "translateY(0%)",
+            transition: "all 1s",
+          },
+        },
+        "card-motion": {
+          from: {
+            transform: "translateY(0%)",
+          },
+          to: {
+            transform: "translateY(15%)",
+          },
+        },
         "circle-expand": {
           "0%": {
             transform: "translate(-40%, 40%) scale(0.8)",

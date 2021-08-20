@@ -6,7 +6,7 @@
 
     <p class="text-sm w-30-ch py-4 font-light">Join the exclusive Firstlist and get 10% cashback on all spends</p>
     <!-- Method: POST -->
-    <form class="w-full px-4 md:px-0 flex justify-between flex-col lg:flex-row relative">
+    <form @submit.prevent="" class="w-full px-4 md:px-0 flex justify-between flex-col lg:flex-row relative">
       <div class="w-full relative">
         <input
           class="
