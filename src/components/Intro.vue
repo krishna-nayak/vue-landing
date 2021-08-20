@@ -1,7 +1,7 @@
 <template>
   <!-- eslint-disable prettier/prettier -->
   <!-- input -->
-  <div class="lg:max-w-lg sm:max-w-sm max-w-xs bg-white flex justify-self-center items-center md:items-start flex-col 2">
+  <div class="lg:max-w-lg sm:max-w-sm max-w-xs flex justify-self-center items-center md:items-start flex-col 2">
     <h1 class="text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl">Meet banking that keeps pace with you</h1>
 
     <p class="text-sm w-30-ch py-4 font-light">Join the exclusive Firstlist and get 10% cashback on all spends</p>
@@ -42,10 +42,32 @@
           hover:from-blue-500 hover:to-blue-400
           lg:mt-0 lg:right-1 lg:top-1/2 lg:transform lg:-translate-y-1/2 lg:absolute
         "
-        type="submit"
+        @click="fetch"
       >
         check firstlist status
       </button>
     </form>
+    <!-- <p>{{ info }}</p> -->
   </div>
 </template>
+
+<script>
+// eslint-disable prettier/prettier
+/* eslint-disable */
+import axios from "axios";
+
+// const API = "https://api.twilio.com/2010-04-01/Accounts/AC77e0042bdbe399eecec9adde871463d3/Messages.json";
+// const accountSid = "AC77e0042bdbe399eecec9adde871463d3";
+// const authToken = "64ed294638969d21d24035392b732485";
+// const client = require("twilio")(accountSid, authToken);
+
+// console.log(client);
+
+export default {
+  data() {
+    return {
+      info: null,
+    };
+  },
+};
+</script>
