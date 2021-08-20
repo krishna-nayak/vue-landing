@@ -31,8 +31,8 @@ module.exports = {
         "card-enter": "card-enter 1.8s ease forwards",
         "card-motion": "card-motion 2s ease-in-out 1.9s infinite alternate",
         "motion-sphere-large": "motion-sphere 10s linear  infinite forwards",
-        "motion-sphere-normal": "motion-sphere 10s linear 0.52s infinite reverse",
-        "motion-sphere-small": "motion-sphere 10s linear 0.3s infinite forwards",
+        "motion-sphere-normal": "motion-sphere 12s linear 0.52s infinite reverse",
+        "motion-sphere-small": "motion-sphere 8s linear 0.3s infinite forwards",
       },
       keyframes: {
         "motion-sphere": {
