@@ -1,6 +1,11 @@
 <template>
   <!-- eslint-disable prettier/prettier -->
   <section class="pt-32 relative overflow-hidden">
+    <div id="animation">
+      <img src="../assets/sphere.svg" alt="sphere-large" class="absolute top-1/2 animate-motion-sphere-large" />
+      <img src="../assets/sphere.svg" alt="sphere-modrate" class="absolute w-12 top-1/4 left-2/4 animate-motion-sphere-normal" />
+      <img src="../assets/sphere.svg" alt="sphere-small" class="absolute w-10 top-3/4 left-1/3 animate-motion-sphere-small" />
+    </div>
     <div class="px-8 md:gap-12 container mx-auto text-center items-center flex flex-col md:text-left md:items-start md:flex-row justify-around relative">
       <Intro />
       <Card />

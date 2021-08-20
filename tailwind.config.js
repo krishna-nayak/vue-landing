@@ -30,8 +30,30 @@ module.exports = {
         "circle-expand": "circle-expand 8s linear 0.3s infinite",
         "card-enter": "card-enter 1.8s ease forwards",
         "card-motion": "card-motion 2s ease-in-out 1.9s infinite alternate",
+        "motion-sphere-large": "motion-sphere 10s linear  infinite forwards",
+        "motion-sphere-normal": "motion-sphere 10s linear 0.52s infinite reverse",
+        "motion-sphere-small": "motion-sphere 10s linear 0.3s infinite forwards",
       },
       keyframes: {
+        "motion-sphere": {
+          from: {
+            transform: "translate(-10%, 0%)",
+          },
+          "25%": {
+            transform: "translate(-80px, -100%)",
+          },
+          "50% ": {
+            transform: "translate(40%, -120%)",
+          },
+
+          "75% ": {
+            transform: "translate(100%, -50%)",
+          },
+          to: {
+            transform: "translate(-10%, 0%)",
+          },
+        },
+
         "card-enter": {
           to: {
             transform: "translateY(0%)",
@@ -80,6 +102,7 @@ module.exports = {
           height: "50vw",
         },
       };
+
       const width = {
         ".w-30-ch": {
           width: "30ch",
@@ -94,6 +117,7 @@ module.exports = {
           borderBottomWidth: "0.0625rem",
         },
       };
+
       addComponents(screen);
       addComponents(width);
       addComponents(borders);
