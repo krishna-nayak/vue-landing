@@ -8,8 +8,9 @@
       <router-link class="mx-3" v-for="link in links" :key="link.to" :to="link.to">{{ link.title }}</router-link>
     </div>
     <button
+      @click="loginFunction"
       :class="{ hidden: !navToggle }"
-      class="px-4 py-2 sm:block rounded-md border-2 border-blue-400 text-blue-500 bg-gradient-to-r hover:from-blue-500 hover:to-blue-400 hover:text-white"
+      class="px-4 py-2 hidden lg:block rounded-md border-2 border-blue-400 text-blue-500 bg-gradient-to-r hover:from-blue-500 hover:to-blue-400 hover:text-white"
     >
       Sign In
     </button>
@@ -22,6 +23,7 @@
 <script>
 /* eslint-disable vue/no-unused-components */
 /* eslint-disable no-unused-vars */
+import { mapMutations } from "vuex";
 
 export default {
   data() {
@@ -35,8 +37,12 @@ export default {
     };
   },
   methods: {
+    ...mapMutations({ login: "setIsLogin" }),
     navMenu() {
       this.navToggle = !this.navToggle;
+    },
+    loginFunction() {
+      this.login();
     },
   },
 };
