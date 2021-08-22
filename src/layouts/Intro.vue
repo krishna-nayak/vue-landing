@@ -47,7 +47,6 @@
         check firstlist status
       </button>
     </form>
-    <!-- <p>{{ info }}</p> -->
   </div>
 </template>
 
@@ -55,13 +54,6 @@
 // eslint-disable prettier/prettier
 /* eslint-disable */
 import axios from "axios";
-
-// const API = "https://api.twilio.com/2010-04-01/Accounts/AC77e0042bdbe399eecec9adde871463d3/Messages.json";
-// const accountSid = "AC77e0042bdbe399eecec9adde871463d3";
-// const authToken = "64ed294638969d21d24035392b732485";
-// const client = require("twilio")(accountSid, authToken);
-
-// console.log(client);
 
 export default {
   data() {
