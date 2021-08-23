@@ -1,9 +1,10 @@
 <template>
   <!-- eslint-disable prettier/prettier -->
   <section class="fixed z-10 top-0 w-screen h-screen grid place-items-center">
+    <!-- screen -->
     <div @click="loginClose" class="absolute z-20 w-screen bg-gray-700 opacity-40 h-screen" />
-
-    <div class="z-20 max-w-3xl w-11/12 h-3/5 sm:h-4/5 mx-auto">
+    <!-- white body -->
+    <div :class="animation" class="z-20 max-w-3xl w-11/12 h-3/5 sm:h-4/5 mx-auto animate__animated">
       <div class="bg-white w-full h-full rounded-3xl relative">
         <div @click="loginClose" class="absolute right-12 top-6" id="icon">
           <i class="fas fa-times fa-2x"></i>
@@ -39,12 +40,34 @@
 </template>
 
 <script>
+// @ is an alias to /src
+/* eslint-disable vue/no-unused-components */
+/* eslint-disable no-unused-vars */
+/* eslint-disable prettier/prettier */
 import { mapMutations } from "vuex";
+import "animate.css";
 export default {
+  data() {
+    return {
+      animationName: "animate__bounceInUp",
+    };
+  },
+
   methods: {
     ...mapMutations({ close: "setLogout" }),
     loginClose() {
-      this.close();
+      setTimeout(() => {
+        this.close();
+        this.animationName = "animate__bounceInUp";
+      }, 1000);
+
+      this.animationName = "animate__backOutDown";
+    },
+  },
+
+  computed: {
+    animation() {
+      return this.animationName;
     },
   },
 };
