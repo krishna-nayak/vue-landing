@@ -24,6 +24,7 @@
           type="number"
           name="number"
           id="number "
+          v-model="number"
           placeholder="Type your number"
         />
         <p class="absolute text-lg md:text-xl top-1/2 transform -translate-y-1/2 left-3 font-light">+91</p>
@@ -42,7 +43,7 @@
           hover:from-blue-500 hover:to-blue-400
           lg:mt-0 lg:right-1 lg:top-1/2 lg:transform lg:-translate-y-1/2 lg:absolute
         "
-        @click="fetch"
+        @click="sendNumber"
       >
         check firstlist status
       </button>
@@ -54,12 +55,20 @@
 // eslint-disable prettier/prettier
 /* eslint-disable */
 import axios from "axios";
+import PostService from "../PostService";
 
 export default {
   data() {
     return {
       info: null,
+      number: "",
     };
+  },
+
+  methods: {
+    async sendNumber() {
+      await PostService.insertPost(this.number).then((data) => console.log("send"));
+    },
   },
 };
 </script>
