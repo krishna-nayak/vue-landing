@@ -1,8 +1,10 @@
 <template>
-  <AppHeader />
-  <Login v-if="isLogin" />
-  <router-view class="screen" />
-  <AppFooter />
+  <div>
+    <AppHeader />
+    <Login v-if="isLogin" />
+    <router-view class="screen" />
+    <AppFooter />
+  </div>
 </template>
 
 <script>
