@@ -6,7 +6,6 @@ require("dotenv").config();
 const app = express();
 
 const port = process.env.PORT || 3000;
-// console.log(process.env.TWILIO_ACCOUNT_SID);
 const accountSid = process.env.TWILIO_ACCOUNT_SID;
 const authToken = process.env.TWILIO_AUTH_TOKEN;
 const client = require("twilio")(accountSid, authToken);
@@ -14,9 +13,20 @@ const client = require("twilio")(accountSid, authToken);
 app.use(bodyParser.json());
 app.use(cors());
 
-app.get("/", (request, response) => {
-  response.send("Hello");
-});
+//Handle Production
+if (process.env.NODE_ENV === "production") {
+  // static folder
+  app.use(express.static(__dirname + "/public/"));
+
+  // Handle SPA
+  app.get(/.*/, (request, response) => {
+    response.sendFile(__dirname + "/public");
+  });
+}
+
+// app.get("/", (request, response) => {
+//   response.send("Hello");
+// });
 
 app.post("/", async (request, response) => {
   console.log(request.body.number);
@@ -29,4 +39,4 @@ app.post("/", async (request, response) => {
     .then((message) => console.log(message.sid));
   response.status(200).send("Done");
 });
-app.listen(port, () => console.log(`server start --> http://localhost::${port}`));
+app.listen(port, () => console.log(`server start --> http://localhost:${port}`));
