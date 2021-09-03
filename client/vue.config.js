@@ -7,6 +7,9 @@ module.exports = {
       "/": {
         target: "http://localhost:3000",
       },
+      "/about": {
+        target: "http://localhost:3000",
+      },
     },
   },
 };

@@ -14,15 +14,15 @@ app.use(bodyParser.json());
 app.use(cors());
 
 //Handle Production
-if (process.env.NODE_ENV === "production") {
-  // static folder
-  app.use(express.static(__dirname + "/public/"));
+// if (process.env.NODE_ENV === "production") {
+// static folder
+app.use(express.static(__dirname + "/public/"));
 
-  // Handle SPA
-  app.get(/.*/, (request, response) => {
-    response.sendFile(__dirname + "/public");
-  });
-}
+// Handle SPA
+app.get(/.*/, (request, response) => {
+  response.sendFile(__dirname + "/public");
+});
+// }
 
 // app.get("/", (request, response) => {
 //   response.send("Hello");
