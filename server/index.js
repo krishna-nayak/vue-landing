@@ -39,4 +39,17 @@ app.post("/", async (request, response) => {
     .then((message) => console.log(message.sid));
   response.status(200).send("Done");
 });
+
+app.get("/about", (request, response) => {
+  response.sendFile(__dirname + "/public/index.html");
+});
+
+app.get("/feature", (request, response) => {
+  response.sendFile(__dirname + "/public/index.html");
+});
+
+app.get("/contact", (request, response) => {
+  response.sendFile(__dirname + "/public/index.html");
+});
+
 app.listen(port, () => console.log(`server start --> http://localhost:${port}`));
