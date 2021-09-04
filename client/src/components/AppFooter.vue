@@ -87,7 +87,7 @@
           <div class="sm:max-w-xs mx-auto my-2 xl:mx-0 text-white flex justify-around xl:justify-between">
             <div class="bg-blue-800 rounded-sm inline-block mx-2 p-1 xl:p-2 xl:mx-0">In-app chat</div>
             <div class="bg-blue-800 rounded-sm inline-block mx-2 p-1 xl:p-2 xl:mx-0">080-47485490</div>
-            <div class="bg-blue-800 rounded-sm inline-block mx-2 p-1 xl:p-2 xl:mx-0">help@fi.care</div>
+            <div class="bg-blue-800 rounded-sm inline-block mx-2 p-1 xl:p-2 xl:mx-0">help@hi.care</div>
           </div>
           <!-- social Link -->
           <div class="mx-auto xl:mx-0 w-28 my-4 text-white relative">
@@ -110,11 +110,11 @@
             }}</router-link>
           </div>
           <!-- ? -->
-          <div class="my-2">© epiFi Technologies Pvt. Ltd. 2021</div>
+          <div class="my-2">© epiHi Technologies Pvt. Ltd. 2021</div>
           <!-- Disclaimer -->
           <div class="my-4">
-            Disclaimer: You may have noticed some brand logos used on this website to indicate where you, as a user, may or may not have spent money. We don't endorse these brands.
-            Nor do these brands endorse us. The logos of the specific brands are owned by them.
+            Disclaimer: Lorem ipsum, dolor sit amet consectetur adipisicing elit. At ea ut error, praesentium debitis odit ipsa vitae odio ipsum esse itaque iusto eveniet alias
+            omnis deserunt illo laborum eaque! Laborum iste eos, omnis placeat doloremque quaerat ipsam commodi provident natus reiciendis sit maxime repellat tempora.
           </div>
         </div>
       </div>
