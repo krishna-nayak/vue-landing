@@ -33,9 +33,9 @@
     </div>
 
     <!-- feature -->
-    <div class="h-screen md:h-screen-vw-50 relative margin-top bg-blue-50 grid place-items-center">
+    <div class="md:h-screen md:h-screen-vw-50 relative margin-top bg-blue-50 grid place-items-center">
       <div class="w-full">
-        <div class="p-6 flex flex-col md:flex-row-reverse items-center justify-center md:justify-around">
+        <div class="p-6 my-10 flex flex-col md:flex-row-reverse items-center justify-center md:justify-around">
           <div>
             <img src="https://wireframestogo.com/585b-Image-Placeholder-Light/thumbnail.png" alt="img" />
           </div>
@@ -43,12 +43,12 @@
             <h1 class="sm:text-5xl text-3xl font-bold">Hey! 👋🏼</h1>
             <h1 class="sm:text-5xl text-3xl mb-10 font-bold">I am <span class="text-purple-700">FanCard</span></h1>
             <ul>
-              <li>I have no hidden fees</li>
-              <li>I will protect your money like no one else</li>
-              <li>I love to shop and pay for my friends with just a tap</li>
-              <li>I am numberless prepaid card and love to wear black</li>
+              <li class="py-2">I have no hidden fees</li>
+              <li class="py-2">I will protect your money like no one else</li>
+              <li class="py-2">I love to shop and pay for my friends with just a tap</li>
+              <li class="py-2">I am numberless prepaid card and love to wear black</li>
             </ul>
-            <button class="my-10 p-2 rounded bg-purple-700 text-white">Order your FanCard</button>
+            <button class="my-10 p-2 px-4 rounded bg-purple-700 text-white">Get your FanCard</button>
           </div>
         </div>
       </div>
