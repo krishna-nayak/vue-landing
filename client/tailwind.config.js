@@ -113,6 +113,9 @@ module.exports = {
         ".w-screen-vw-50": {
           width: "50vw",
         },
+        ".h-850": {
+          height: "850px",
+        },
       };
 
       const borders = {

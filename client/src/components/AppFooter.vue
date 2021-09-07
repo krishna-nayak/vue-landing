@@ -84,10 +84,10 @@
             <p>For app-related assistance</p>
           </div>
           <!-- In-app chat 080-47485490 help@fi.care -->
-          <div class="sm:max-w-xs mx-auto my-2 xl:mx-0 text-white flex justify-around xl:justify-between">
-            <div class="bg-blue-800 rounded-sm inline-block mx-2 p-1 xl:p-2 xl:mx-0">In-app chat</div>
-            <div class="bg-blue-800 rounded-sm inline-block mx-2 p-1 xl:p-2 xl:mx-0">080-47485490</div>
-            <div class="bg-blue-800 rounded-sm inline-block mx-2 p-1 xl:p-2 xl:mx-0">help@hi.care</div>
+          <div class="md:max-w-sm sm:max-w-xs mx-auto my-2 xl:mx-0 text-white flex gap-4">
+            <!-- <div class="bg-blue-800 rounded-sm inline-block mx-2 p-1 xl:p-2 xl:mx-0">In-app chat</div> -->
+            <div class="bg-blue-800 rounded-sm inline-block mx-2 p-1 xl:p-2 xl:mx-0">06287888800</div>
+            <div class="bg-blue-800 rounded-sm inline-block mx-2 p-1 xl:p-2 xl:mx-0">letstalk@onepaise.com</div>
           </div>
           <!-- social Link -->
           <div class="mx-auto xl:mx-0 w-28 my-4 text-white relative">
@@ -110,7 +110,7 @@
             }}</router-link>
           </div>
           <!-- ? -->
-          <div class="my-2">© epiHi Technologies Pvt. Ltd. 2021</div>
+          <div class="my-2">© One Payments Private Limited</div>
           <!-- Disclaimer -->
           <div class="my-4">
             Disclaimer: Lorem ipsum, dolor sit amet consectetur adipisicing elit. At ea ut error, praesentium debitis odit ipsa vitae odio ipsum esse itaque iusto eveniet alias

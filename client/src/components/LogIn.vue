@@ -6,6 +6,7 @@
     <!-- white body -->
     <div :class="animation" class="z-20 max-w-3xl w-11/12 h-3/5 sm:h-4/5 mx-auto animate__animated">
       <div class="bg-white w-full h-full rounded-3xl relative">
+        <!-- TODO: change the login design/data-field -->
         <div @click="loginClose" class="absolute right-12 top-6" id="icon">
           <i class="fas fa-times fa-2x"></i>
         </div>
