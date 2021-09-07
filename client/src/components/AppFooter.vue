@@ -2,7 +2,7 @@
   <!-- eslint-disable prettier/prettier -->
   <!-- Responsive 🤔 Footer -->
 
-  <footer class="bg-blue-700 text-center">
+  <footer class="bg-blue-700 text-center relative">
     <!-- Float -->
     <div class="py-10 w-80 sm:w-md xl:w-lg relative mx-auto">
       <div class="absolute w-full -top-16 left-1/2 transform -translate-x-1/2">

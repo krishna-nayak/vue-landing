@@ -2,7 +2,7 @@
   <div>
     <AppHeader />
     <Login v-if="isLogin" />
-    <router-view class="screen" />
+    <router-view />
     <AppFooter />
   </div>
 </template>

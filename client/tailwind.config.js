@@ -101,6 +101,9 @@ module.exports = {
         ".h-screen-vw-50": {
           height: "50vw",
         },
+        ".margin-top": {
+          marginTop: "calc(100vh - 5rem)",
+        },
       };
 
       const width = {

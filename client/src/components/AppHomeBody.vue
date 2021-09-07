@@ -1,34 +1,58 @@
 <template>
   <!-- eslint-disable prettier/prettier -->
-  <section class="pt-32 relative overflow-hidden">
-    <div id="animation">
-      <img src="../assets/sphere.svg" alt="sphere-large" class="absolute top-1/2 animate-motion-sphere-large" />
-      <img src="../assets/sphere.svg" alt="sphere-modrate" class="absolute w-12 top-1/4 left-2/4 animate-motion-sphere-normal" />
-      <img src="../assets/sphere.svg" alt="sphere-small" class="absolute w-10 top-3/4 left-1/3 animate-motion-sphere-small" />
-    </div>
-    <div class="px-8 md:gap-12 container mx-auto text-center items-center flex flex-col md:text-left md:items-start md:flex-row justify-around relative">
-      <Intro />
-      <Card />
+  <section>
+    <div class="pt-0 md:pt-32 fixed top-32 overflow-hidden w-full screen">
+      <div id="animation">
+        <img src="../assets/sphere.svg" alt="sphere-large" class="absolute top-1/2 animate-motion-sphere-large" />
+        <img src="../assets/sphere.svg" alt="sphere-modrate" class="absolute w-12 top-1/4 left-2/4 animate-motion-sphere-normal" />
+        <img src="../assets/sphere.svg" alt="sphere-small" class="absolute w-10 top-3/4 left-1/3 animate-motion-sphere-small" />
+      </div>
+      <div class="px-8 md:gap-12 container mx-auto text-center items-center flex flex-col md:text-left md:items-start md:flex-row justify-around relative">
+        <Intro />
+        <Card />
+      </div>
+
+      <div
+        class="
+          bg-gradient-to-tr
+          to-blue-400
+          from-blue-300
+          animate-circle-expand
+          w-screen-vw-50
+          h-screen-vw-50
+          absolute
+          bottom-0
+          left-1/2
+          rounded-full
+          -z-1
+          transform
+          -translate-x-1/2
+          translate-y-1/2
+        "
+      ></div>
     </div>
 
-    <div
-      class="
-        bg-gradient-to-tr
-        to-blue-400
-        from-blue-300
-        animate-circle-expand
-        w-screen-vw-50
-        h-screen-vw-50
-        absolute
-        bottom-0
-        left-1/2
-        rounded-full
-        -z-1
-        transform
-        -translate-x-1/2
-        translate-y-1/2
-      "
-    ></div>
+    <!-- feature -->
+    <div class="h-screen md:h-screen-vw-50 relative margin-top bg-blue-50 grid place-items-center">
+      <div class="w-full">
+        <div class="p-6 flex flex-col md:flex-row-reverse items-center justify-center md:justify-around">
+          <div>
+            <img src="https://wireframestogo.com/585b-Image-Placeholder-Light/thumbnail.png" alt="img" />
+          </div>
+          <div class="sm:text-xl text-lg mt-10 md:mt-0">
+            <h1 class="sm:text-5xl text-3xl font-bold">Hey! 👋🏼</h1>
+            <h1 class="sm:text-5xl text-3xl mb-10 font-bold">I am <span class="text-purple-700">FanCard</span></h1>
+            <ul>
+              <li>I have no hidden fees</li>
+              <li>I will protect your money like no one else</li>
+              <li>I love to shop and pay for my friends with just a tap</li>
+              <li>I am numberless prepaid card and love to wear black</li>
+            </ul>
+            <button class="my-10 p-2 rounded bg-purple-700 text-white">Order your FanCard</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 </template>
 
